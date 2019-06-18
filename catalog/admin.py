@@ -5,12 +5,11 @@ from django.contrib import admin
 from catalog.models import Author, Genre, Book, BookInstance, Language
 
 
-admin.site.register(Book)
+# admin.site.register(Book)
 # admin.site.register(Author)
 admin.site.register(Genre)
-admin.site.register(BookInstance)
+# admin.site.register(BookInstance)
 admin.site.register(Language)
-
 
 
 # Define the admin class
@@ -20,8 +19,6 @@ class AuthorAdmin(admin.ModelAdmin):
 # Register the admin class with the associated model
 admin.site.register(Author, AuthorAdmin)
 
-# admin.site.register(Book)
-# admin.site.register(BookInstance)
 
 # Register the Admin classes for Book using the decorator
 @admin.register(Book)
